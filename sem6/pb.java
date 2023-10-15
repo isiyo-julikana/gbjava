@@ -78,7 +78,7 @@ public class pb {
         PrintPhonebook(); //вывод записей на экран
 
         
-        System.out.println("выбор действия: (add)добавить данные, (del)удалить данные, (num) найти номера по имени, (name))найти имя, " +
+        System.out.println("выбор действия: (add)добавить данные, (del)удалить данные, (num) найти номера по имени, (name)найти имя, " +
                             "(save)сохранить, (exit)выход"); //вывод на экран описания возможных действий с указанием команд
 
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
@@ -101,8 +101,8 @@ public class pb {
                     //поиск номеров по имени
                     if (act.equals("num")){
                         System.out.println("Введите имя:");
-                        String surname = bf.readLine();
-                        String[] numbers = FindNumberPhone(surname);
+                        String name = bf.readLine();
+                        String[] numbers = FindNumberPhone(name);
                         for (String number : numbers) {
                             System.out.println(number);
                         }
