@@ -6,8 +6,8 @@ public class Program {
 
     public static void main(String[] args) {
 
-        Worker[] workers = EmployeeFabric.generateEmployees(15);
-        for (Worker worker : workers) {
+        Employee[] workers = EmployeeFabric.generateEmployees(15);
+        for (Employee worker : workers) {
             System.out.println(worker);
         }
 
@@ -17,7 +17,7 @@ public class Program {
 
         Arrays.sort(workers, new SalaryComparator());
 
-        for (Worker worker : workers) {
+        for (Employee worker : workers) {
             System.out.println(worker);
         }
 

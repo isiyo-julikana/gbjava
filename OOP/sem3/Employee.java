@@ -1,8 +1,5 @@
 package OOP.sem3;
 
-/**
- * Рабочий (базовый тип)
- */
 public abstract class Employee implements Comparable<Employee>{
 
     @Override
@@ -14,10 +11,11 @@ public abstract class Employee implements Comparable<Employee>{
         return surNameRes;
     }
 
-    public Employee(String surName, String name, double salary) {
+    public Employee(String surName, String name, double salary, int age) {
         this.name = name;
         this.surName = surName;
         this.salary = salary;
+        this.age = age;
     }
 
     /**
@@ -35,11 +33,17 @@ public abstract class Employee implements Comparable<Employee>{
      */
     protected double salary;
 
+    // Возраст
+    protected int age;
+
     /**
      * Расчет среднемесячной заработной платы
      * @return заработная плата в месяц
      */
     public abstract double calculateSalary();
+
+    public abstract int ageSort();
+
 
     @Override
     public String toString() {
