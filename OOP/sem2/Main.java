@@ -1,6 +1,5 @@
 package OOP.sem2;
 
-import java.util.Random;
 
 public class Main {
     private static int ranNum() {
@@ -23,8 +22,8 @@ public class Main {
         for (Cat cat : arrCats) {
             cat.eat(plate);
             cat.info();
+            plate.info();
         }
-        plate.info();
         plate.addFood(100);
         plate.info();
     }
