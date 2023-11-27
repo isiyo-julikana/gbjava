@@ -10,6 +10,8 @@ public class Table {
 
     private final int no;
 
+    private boolean status;
+
     private final Collection<Reservation> reservations = new ArrayList<>();
 
     public Collection<Reservation> getReservations() {
@@ -22,6 +24,13 @@ public class Table {
 
     public Table(){
         no = ++counter;
+    }
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
     @Override

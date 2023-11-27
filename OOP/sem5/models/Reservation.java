@@ -15,7 +15,14 @@ public class Reservation {
     public int getId() {
         return id;
     }
+    public Date getDate() {
+        return date;
+    }
 
+    public String getName() {
+        return name;
+    }
+   
     public Reservation(Table table, Date date, String name) {
         this.date = date;
         this.name = name;

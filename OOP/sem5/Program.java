@@ -1,4 +1,4 @@
-package OOP.sem5.lesson5;
+package OOP.sem5;
 
 import OOP.sem5.models.TableModel;
 import OOP.sem5.presenters.BookingPresenter;
@@ -11,15 +11,18 @@ public class Program {
     //TODO: Метод changeReservationTable должен заработать!
     public static void main(String[] args) {
 
-        TableModel tableModel = new TableModel();
-        BookingView bookingView = new BookingView();
-        BookingPresenter bookingPresenter = new BookingPresenter(tableModel, bookingView);
+        int tableNum = 2, newTableNum = 3;
+
+        TableModel model = new TableModel();
+        BookingView view = new BookingView();
+        BookingPresenter bookingPresenter = new BookingPresenter(model, view);
         bookingPresenter.updateTablesUI();
-        bookingView.reservationTable(new Date(), 3, "Станислав");
 
+        view.reservationTable(new Date(), tableNum, "Максим");
+        bookingPresenter.updateTablesUI();
 
-        bookingView.changeReservationTable(1004, new Date(), 2, "Станислав");
-
+        view.changeReservationTable(101, tableNum, new Date(), newTableNum, "Максим");
+        bookingPresenter.updateTablesUI();
     }
 
 }
