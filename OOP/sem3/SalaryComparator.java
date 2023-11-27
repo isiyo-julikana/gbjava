@@ -9,7 +9,7 @@ public class SalaryComparator implements Comparator<Employee> {
 
         return Double.compare(o2.calculateSalary(), o1.calculateSalary());
 
-        if (o1.calculateSalary() > o2.calculateSalary())
+        /*if (o1.calculateSalary() > o2.calculateSalary())
         {
             return 1;
         }
@@ -18,6 +18,6 @@ public class SalaryComparator implements Comparator<Employee> {
         }
         else{
             return -1;
-        }
+        }*/
     }
 }
