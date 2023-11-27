@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson5.views;
+package OOP.sem5.views;
 
 public class CustomView {
 }

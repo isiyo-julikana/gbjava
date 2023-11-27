@@ -1,8 +1,8 @@
-package ru.geekbrains.lesson5.views;
+package OOP.sem5.views;
 
-import ru.geekbrains.lesson5.models.Table;
-import ru.geekbrains.lesson5.presenters.View;
-import ru.geekbrains.lesson5.presenters.ViewObserver;
+import OOP.sem5.models.Table;
+import OOP.sem5.presenters.View;
+import OOP.sem5.presenters.ViewObserver;
 
 import java.util.ArrayList;
 import java.util.Collection;

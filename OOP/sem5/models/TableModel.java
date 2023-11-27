@@ -1,6 +1,5 @@
-package ru.geekbrains.lesson5.models;
-
-import ru.geekbrains.lesson5.presenters.Model;
+package OOP.sem5.models;
+import OOP.sem5.presenters.Model;
 
 import java.util.ArrayList;
 import java.util.Collection;
