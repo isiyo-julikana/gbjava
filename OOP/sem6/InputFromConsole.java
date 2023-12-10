@@ -1,5 +1,3 @@
-package OOP.sem6;
-
 import java.util.Scanner;
 
 

@@ -1,5 +1,3 @@
-package OOP.sem6;
-
 public class Order {
          
     private String clientName;

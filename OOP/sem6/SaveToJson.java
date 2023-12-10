@@ -1,5 +1,3 @@
-package OOP.sem6;
-
 import java.io.FileWriter;
 import java.io.IOException;
 
